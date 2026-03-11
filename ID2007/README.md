@@ -3,7 +3,7 @@
 ## 📌 Featured Solutions
 | Problem Name | Company | Difficulty | Concept |
 | :--- | :--- | :--- | :--- |
-| [Rank Improvement](#monthly-rank-improvement) | Facebook/Meta | Hard | Window Functions, CTEs |
+| [Rank Improvement](https://platform.stratascratch.com/coding/2007-rank-variance-per-country?code_type=3) | Facebook/Meta | Hard | Window Functions, CTEs |
 
 ---
 
