@@ -1,1 +1,16 @@
-# SQL
+# StrataScratch SQL Solutions 🚀
+
+A collection of SQL solutions from StrataScratch, focused on real-world interview questions from companies like Meta, Airbnb, and Google.
+
+## 📌 Featured Solutions
+| Problem Name | Company | Difficulty | Concept |
+| :--- | :--- | :--- | :--- |
+| [Rank Improvement](#monthly-rank-improvement) | Facebook/Meta | Hard | Window Functions, CTEs |
+
+---
+
+## [Monthly Rank Improvement]
+### Problem Statement
+Compare the total number of comments made by users in each country during December 2019 and January 2020. Return the names of countries whose rank improved (rank number became smaller) from December to January.
+
+[View Detailed Solution](./solutions/rank_improvement.md)
