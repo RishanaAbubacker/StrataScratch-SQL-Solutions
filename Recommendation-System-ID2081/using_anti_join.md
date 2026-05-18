@@ -17,7 +17,7 @@ Return unique user-page combinations as recommendations.
 
 ## 💻 Solution (SQL)
 
-
+```sql
 SELECT DISTINCT
     f.user_id,
     p.page_id
