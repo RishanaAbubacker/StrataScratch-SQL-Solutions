@@ -23,6 +23,9 @@ Find users who logged events on 3 consecutive days.
    - Current date and previous date difference = 1
    - Current date and second previous date difference = 2
 
+
+[View Details Solution](./Solutions/using_window_function.md)
+
 ## Folder Structure
 
 ```text
