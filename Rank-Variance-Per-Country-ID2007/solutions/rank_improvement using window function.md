@@ -1,4 +1,4 @@
-# Monthly Rank Improvement
+# Monthly Rank Improvement Using LAG Function
 **Company:** Facebook/Meta | **Difficulty:** Hard | **Topic:** Window Functions
 
 ## 📝 Problem Description
