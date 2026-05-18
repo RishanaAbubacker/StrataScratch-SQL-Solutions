@@ -1,31 +1,22 @@
-Friend-Based Page Recommendation
+## Friend-Based Page Recommendation
+
 Company: Meta Platforms / Facebook | Difficulty: Medium | Topic: Anti Join, Recommendation Logic
 
-📝 Problem Statement
+### 🛠️ The Logic
 
-You are given a list of Facebook friendships and the pages followed by Facebook users.
+#### Step 1: Find Pages Followed by Friends
+Join the friendship table with the pages table to identify pages followed by each user's friends.
 
-Design a recommendation system that suggests pages to users based on their friends' interests. For each user, recommend pages that:
+#### Step 2: Remove Already Followed Pages
+Use `NOT EXISTS` to exclude pages already followed by the user.
 
-The user does not already follow
-At least one of their friends follows
+#### Step 3: Generate Recommendations
+Return unique user-page combinations as recommendations.
 
-Return the user ID and the page ID that should be recommended.
+---
 
-🛠️ The Logic
-1. Map Friends to Their Followed Pages
+## 💻 Solution (SQL)
 
-Join the friendship table with the pages-followed table to identify pages followed by each user's friends.
-
-2. Exclude Already Followed Pages
-
-Use an anti-join (NOT EXISTS or LEFT JOIN) to remove pages the user already follows.
-
-3. Generate Recommendations
-
-Return distinct combinations of user IDs and recommended page IDs.
-
-💻 Solution (SQL)
 
 SELECT DISTINCT
     f.user_id,
