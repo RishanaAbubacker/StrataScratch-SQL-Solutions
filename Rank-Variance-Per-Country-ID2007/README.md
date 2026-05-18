@@ -7,12 +7,12 @@
 
 ---
 
-## [Monthly Rank Improvement]
+## Monthly Rank Improvement
 ### Problem Statement
 Compare the total number of comments made by users in each country during December 2019 and January 2020. Return the names of countries whose rank improved (rank number became smaller) from December to January.
 
 [View Detailed Solution using Window Function](./solutions/using_window_function.md)
 
----
+
 
 [View Detailed Solution using Self Join](./solutions/using_self_join.md)
