@@ -1,5 +1,5 @@
-# Monthly Rank Improvement Using LAG Function
-**Company:** Facebook/Meta | **Difficulty:** Hard | **Topic:** Window Functions
+# Monthly Rank Improvement Using Self Join
+**Company:** Facebook/Meta | **Difficulty:** Hard | **Topic:** Self Joins
 
 ## 📝 Problem Description
 Rank countries by their total number of comments in descending order for Dec 2019 and Jan 2020. Find countries whose rank improved (e.g., moved from Rank 5 to Rank 2).
@@ -7,10 +7,10 @@ Rank countries by their total number of comments in descending order for Dec 201
 ## 🛠️ The Logic
 1. **Aggregate**: Sum comments per country, per month.
 2. **Rank**: Use `DENSE_RANK()` partitioned by month to create a leaderboard.
-3. **Compare**: Use `LAG()` to pull the December rank onto the January row.
+3. **Compare**: Self-join the ranked dataset to compare country rankings across months.
 4. **Filter**: Select countries where the January rank is smaller than the December rank.
 
-## 💻 Solution (PostgreSQL)
+## 💻 Solution (MySQL)
 
 ```sql
 WITH monthly_ranks AS (
