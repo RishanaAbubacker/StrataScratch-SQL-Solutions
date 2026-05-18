@@ -1,0 +1,40 @@
+Friend-Based Page Recommendation
+
+📝 Problem Statement
+
+You are given a list of Facebook friendships and the pages followed by Facebook users.
+
+Design a recommendation system that suggests pages to users based on their friends' interests. For each user, recommend pages that:
+
+The user does not already follow
+At least one of their friends follows
+
+Return the user ID and the page ID that should be recommended.
+
+🛠️ The Logic
+1. Map Friends to Their Followed Pages
+
+Join the friendship table with the pages-followed table to identify pages followed by each user's friends.
+
+2. Exclude Already Followed Pages
+
+Use an anti-join (NOT EXISTS or LEFT JOIN) to remove pages the user already follows.
+
+3. Generate Recommendations
+
+Return distinct combinations of user IDs and recommended page IDs.
+
+💻 Solution (SQL)
+
+SELECT DISTINCT
+    f.user_id,
+    p.page_id
+FROM facebook_friends AS f
+JOIN facebook_pages AS p
+    ON f.friend_id = p.user_id
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM facebook_pages AS fp
+    WHERE fp.user_id = f.user_id
+      AND fp.page_id = p.page_id
+);
