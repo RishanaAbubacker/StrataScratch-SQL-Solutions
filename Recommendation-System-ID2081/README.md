@@ -25,4 +25,4 @@ Return the user ID and the page ID that should be recommended.
 
 ---
 
-View Detailed Solution
+[View Detailed Solution](/.using_anti_join.md)
