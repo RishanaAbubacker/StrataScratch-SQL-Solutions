@@ -4,7 +4,7 @@
 
 | Problem Name | Company | Difficulty | Concept |
 |---|---|---|---|
-| Friend Page Recommendation | Facebook/Meta | Medium | Joins, Anti Join, Recommendation Logic |
+| [Friend Page Recommendation](https://platform.stratascratch.com/coding/2081-recommendation-system?code_type=3) | Facebook/Meta | Medium | Joins, Anti Join, Recommendation Logic |
 
 ---
 
