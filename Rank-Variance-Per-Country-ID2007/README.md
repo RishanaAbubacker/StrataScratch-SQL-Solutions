@@ -11,4 +11,4 @@
 ### Problem Statement
 Compare the total number of comments made by users in each country during December 2019 and January 2020. Return the names of countries whose rank improved (rank number became smaller) from December to January.
 
-[View Detailed Solution - Window Function](./solutions/rank_improvement using window function.md)
+[View Detailed Solution using Window Function](./solutions/rank_improvement using window function.md)
